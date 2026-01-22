@@ -92,12 +92,35 @@ h4 {
   align-content: center;
 }
 
-@media (max-width:500px) {
-    .head{
-        flex-direction: row;
+
+@media (max-width: 760px) {
+    .head h1 {
+        font-size: 40px;
     }
 
-    .head--nav a{
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .content--aside {
+        width: 40%;
+    }
+
+    .content--main {
+        width: 60%;
+    }
+
+    .content--sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .head {
+        font-display: row;
+    }
+
+    .head--nav a {
         display: none;
     }
 
@@ -107,7 +130,7 @@ h4 {
         margin-left: 100px;
     }
 
-    .head--nav--icon{
+    .head--nav--icon {
         display: block;
         width: 30%;
         padding-top: 20px;
@@ -129,27 +152,4 @@ h4 {
     .content--sidebar {
         width: 100%;
     }
-}
-
-@media (max-width: 760px) {
-    .head h1{
-        font-size: 40px;
-    }
-
-    .content {
-        flex-wrap: wrap;
-    }
-
-    .content--aside{
-        width: 40%;
-    }
-
-    .content-main{
-        width: 60%;
-    }
-
-    .content--sidebar{
-        width: 60%;
-    }
-
 }
